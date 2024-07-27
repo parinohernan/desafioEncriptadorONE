@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/hpdev.png" width="100px" alt="logo de HP dev" class="logo">
+        <h1>Encriptador de texto HTML y JS</h1>
+    </header>
+    <main class="main-encriptador">
+        <div class="encriptador">
+            <div class="encriptador-text-into">
+                <!-- Div editable en lugar de textarea -->
+                <div class="editable-div" contenteditable="true"></div>
+                <p class="advertencia__texto">Solo letras minúsculas y sin acentos</p>
+                <div class="encriptador-text-into__botones">
+                    <button onclick="Encriptar();" class="encriptador-text-into__boton_oscuro">Encriptar</button>
+                    <button onclick="Desencriptar();" class="encriptador-text-into__boton_claro">Desencriptar</button>
+                </div>
+            </div>
+            <div class="encriptador-text-output">
+                <p class="encriptador__output">Ningún mensaje fue encontrado</p>
+                <div class="encriptador__output_div">
+                    <img src="./assets/boxy_robot_searching.png" width="60%" class="encriptador__image"/>
+                    <p class="encriptador__output_p" >Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="encriptador-text-into__botones">
+                    <button onclick="copiar();" id="copiar" class="encriptador-text-into__boton_claro" style="display: none;">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por hpdev - Hernan Parino - 2024</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
