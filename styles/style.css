@@ -157,7 +157,8 @@ body {
   max-height: 70%;
 }
 
-@media (max-width: 120vh) {
+@media (max-width: 1023px) {
+  /* tablet */
   body {
     flex-direction: column;
   }
@@ -195,7 +196,7 @@ body {
     align-items: center;
   }
 }
-@media (max-width: 80vh) {
+@media (max-width: 767px) {
   .encriptador-text-into__botones {
     display: flex;
     flex-direction: column;
